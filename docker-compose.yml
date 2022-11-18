@@ -1,0 +1,19 @@
+version: "3.5"
+services:
+  frps_server_app:
+    container_name: frps_server
+    volumes:
+      - ./frps/conf:/conf
+    build: ./frps
+
+  nginx_app:
+    container_name: nginx
+    restart: always
+    build: ./nginx
+    volumes:
+      - ./nginx/logs:/var/nginx/logs
+    ports:
+      - "80:80"
+      - "7000:7000"
+      - "8080:8080"
+      - "8081:8081"
