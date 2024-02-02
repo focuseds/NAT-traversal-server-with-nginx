@@ -19,3 +19,4 @@ services:
       - "8081:8081"
       # dash board port in ../frps/conf/frps.toml
       # - "8500:8500"
+      - "7000:7000"
