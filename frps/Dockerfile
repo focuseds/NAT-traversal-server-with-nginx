@@ -1,1 +1,1 @@
-FROM snowdreamtech/frps
+FROM snowdreamtech/frps:latest

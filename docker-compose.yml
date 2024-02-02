@@ -14,8 +14,8 @@ services:
       - ./nginx/logs:/var/nginx/logs
     ports:
       - "80:80"
-      # bind port in ../frps/conf/frps.ini
+      # bind port in ../frps/conf/frps.toml
       - "8080:8080"
       - "8081:8081"
-      # dash board port in ../frps/conf/frps.ini
-      - "8500:8500"
+      # dash board port in ../frps/conf/frps.toml
+      # - "8500:8500"
